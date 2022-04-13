@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./assets/css/stylePortefolio.css" rel="stylesheet">
+    <link href="./assets/bootstrap/bootstrap5.min.css" rel="stylesheet">
+   
+
+    <link href="./assets/css/all-min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="boxAccueil">
+            <div class="boxLogo position-relative">
+                <a class="logoAccueil" href="./">Paradoxe.</a>
+            </div>
+            <div class="burger animeOpac">
+                <div class="position-relative d-flex justify-content-center align-items-center w-100 h-100 flex-column spanBurger">
+                    <span class="ligne"></span>
+                    <span class="ligne"></span>
+                    <span class="ligne"></span>
+                </div>
+            </div>
+        </div>
+     
+    
+        <div id="menuBurgerDesktop" class="position-fixed row m-0">
+            <div id="burgerSectionGauche" class="bg-white col-12 col-lg-6 d-flex flex-column justify-content-between pe-0">
+                <div class="childBurger">
+                    <nav class="d-flex flex-column">
+                        <div class="unit w-100">
+                            <div class="digits text-white w-100 position-relative" style="z-index: 3;">
+                                <div class="cd__digit w-100 ancreBurger d-flex text-dark">
+                                    <div>
+                                        <i class="fas fa-long-arrow-alt-right arrowBurger"></i>
+                                    </div>
+                                    <a class=" position-relative lienAccueil  text-dark" href="./">Accueil</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="unit w-100">
+                            <div class="digits text-white w-100 position-relative" style="z-index: 3;">
+                                <div class="cd__digit w-100 ancreBurger d-flex text-dark" >
+                                    <i class="fas fa-long-arrow-alt-right arrowBurger"></i>
+                                    <a class=" text-dark lienBurger" >Contact</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="unit w-100">
+                            <div class="digits text-white w-100 position-relative" style="z-index: 3;">
+                                <div class="cd__digit w-100 ancreBurger d-flex text-dark" >
+                                    <div><i class="fas fa-long-arrow-alt-right arrowBurger"></i></div>
+                                    <a class=" text-dark lienBurger" >Prestations</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="unit w-100">
+                            <div class="digits text-white w-100 position-relative" style="z-index: 3;">
+                                <div class="cd__digit w-100 ancreBurger d-flex text-dark" >
+                                    <div><i class="fas fa-long-arrow-alt-right arrowBurger"></i></div>
+                                    <a class="  text-dark lienBurger" >Portefolio</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="unit w-100">
+                            <div class="digits text-white w-100 position-relative" style="z-index: 3;">
+                                <div class="cd__digit w-100 ancreBurger d-flex text-dark" >
+                                    <div><i class="fas fa-long-arrow-alt-right arrowBurger"></i></div>
+                                    <a class=" text-dark lienBurger" >Histoire</a>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="d-flex justify-content-between" id="adresseBurger">
+                    <div class="d-flex justify-content-end flex-column fw-bold">
+                        <div class="unit w-100">
+                            <div class="digits text-dark w-100 position-relative digitAdresse margeDigit">
+                                <div class="cd__digit w-100 " >
+                                    <p class="digitContact">06 52 57 65 67</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="unit w-100">
+                            <div class="digits text-dark w-100 position-relative digitAdresse">
+                                <div class="cd__digit w-100 ">
+                                    <p class="digitContact">contact.paradoxe.fr</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column reseauxBurger">
+                        <div class="unit w-100 unitTel">
+                            <div class="digitsReseau text-dark w-100 m-0 position-relative" style="z-index: 1;">
+                                <div class="cd__digit w-100 ">
+                                    <a class="lienReseau text-dark" href="#" >
+                                        <i class="fab fa-twitter reseauAccueil" style="font-size:3.5vmin"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="unit w-100 unitTel">
+                            <div class="digitsReseau text-dark w-100 position-relative" style="z-index: 1;">
+                                <div class="cd__digit w-100 ">
+                                    <a class="lienReseau text-dark"> <i class="fab fa-instagram reseauAccueil" style="font-size:3.5vmin;"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="unit w-100 unitTele">
+                            <div class="digitsReseau text-dark w-100 position-relative " style="z-index: 1;">
+                                <div class="cd__digit w-100 ">
+                                    <a class="lienReseau text-dark"><i class="fab fa-linkedin-in reseauAccueil" style="font-size:3.5vmin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="burgerSectionDroite" class="p-0 col-6 d-lg-flex flex-column d-none">
+                
+                    <div class="w-100  d-flex align-items-end" style="mix-blend-mode: multiply; background:rgb(0, 0, 0);height: 60%;">
+                        <h5 class="fw-bold titreSectionDroite text-white text-center w-100" style="font-size: 10vmin;">Agence <br> Paradoxe.</h5>
+                    </div>
+                    <div class="d-flex justify-content-end align-items-center flex-column text-white" style="height: 40%;background-color: black;">
+                        <p class="m-0 text-center" style="font-size: 2.5vmin;padding:0 3vmin">Agence Paradoxe &copy; 2022 - Agence web sur Montauban et Toulouse </p>
+                        <div class="bg-white" style="height: 0.2vmin;width: 15vmin;margin: 2vmin 0;"></div>
+                        <div style="font-size: 1.5vmin;" class="mb-1">
+                            <a class="text-white" href="">CGU |</a>
+                            <a class="text-white" href="">Mention Légales |</a>
+                            <a class="text-white" href="">Politique-de-confidentialité</a>
+                        </div>
+                    </div>
+               
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div>
+            <div class="boxTitre">
+             
+                <h1 class="titrePrincipale">Nous créons une présence <br>
+                    <span
+                       class="txt-rotate"
+                       data-period="2000"
+                       data-rotate='[ "numerique.", "simple.", "digital.", "efficace.", "professionnelle." ]'></span>
+                  </h1>
+            </div>
+            <div class="boxNavigation">
+                <span>Tous les projets</span>
+                <span class="centerLien">Numérique</span>
+                <span>Image de marque</span>
+            </div>
+        </div>
+       
+
+        <div class="allBoxSite ">
+            <div class="boxSite">
+                <div class="boxImg">
+                    <img src="./assets/img/accueil.webp" class="imgSite">
+                </div>
+       
+                <div class="propriete">
+                    <h3 class="titrePrincipale">Reseau mondial</h3>
+                    <span class="spanGroupe">Site vitrine, animation, référencement</span>
+                    <p class="presentSite ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni illo cumque vel delectus, maiores odio.</p>
+                    <div class="boxIcone">
+                        <div>
+                            <i class="far fa-envelope"></i>
+                            <span>x3</span>
+                        </div>
+                        <div class="boxIconeC">
+                            <i class="far fa-envelope"></i>
+                            <span>x1</span>
+                        </div>
+                        <div>
+                            <i class="far fa-envelope"></i>
+                            <span>x2</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="boxSite">
+                <div class="boxImg">
+                    <img src="./assets/img/accueil.webp" class="imgSite">
+                </div>
+                <div class="propriete">
+                    <h3 class="titrePrincipale">Reseau mondial</h3>
+                    <span class="spanGroupe">Site vitrine, animation, référencement</span>
+                    <p class="presentSite">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni illo cumque vel delectus, maiores odio.</p>
+                    <div class="boxIcone">
+                        <div>
+                            <i class="far fa-envelope"></i>
+                            <span>x3</span>
+                        </div>
+                        <div class="boxIconeC">
+                            <i class="far fa-envelope"></i>
+                            <span>x1</span>
+                        </div>
+                        <div>
+                            <i class="far fa-envelope"></i>
+                            <span>x2</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="boxSite">
+                <div class="boxImg">
+                    <img src="./assets/img/accueil.webp" class="imgSite">
+                </div>
+                <div class="propriete">
+                    <h3 class="titrePrincipale">Reseau mondial</h3>
+                    <span class="spanGroupe">Site vitrine, animation, référencement</span>
+                    <p class="presentSite">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni illo cumque vel delectus, maiores odio.</p>
+                    <div class="boxIcone">
+                        <div>
+                            <i class="far fa-envelope"></i>
+                            <span>x3</span>
+                        </div>
+                        <div class="boxIconeC">
+                            <i class="far fa-envelope"></i>
+                            <span>x1</span>
+                        </div>
+                        <div>
+                            <i class="far fa-envelope"></i>
+                            <span>x2</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="boxSite">
+                <div class="boxImg">
+                    <img src="./assets/img/accueil.webp" class="imgSite">
+                </div>
+                <div class="propriete">
+                    <h3 class="titrePrincipale">Reseau mondial</h3>
+                    <span class="spanGroupe">Site vitrine, animation, référencement</span>
+                    <p class="presentSite">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni illo cumque vel delectus, maiores odio.</p>
+                    <div class="boxIcone">
+                        <div>
+                            <i class="far fa-envelope"></i>
+                            <span>x3</span>
+                        </div>
+                        <div class="boxIconeC">
+                            <i class="far fa-envelope"></i>
+                            <span>x1</span>
+                        </div>
+                        <div>
+                            <i class="far fa-envelope"></i>
+                            <span>x2</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+<footer>
+
+</footer>
+
+   <aside>
+        <div id="divId" style="width: 100%; height: 33.35vh; background-color: black; position: absolute; z-index: 4; top: 0;"></div>
+        <div id="divId"  style="width: 100%; height: 33.35vh; background-color: black; position: absolute; z-index: 4; top: 33.35%;"></div>
+        <div id="divId"  style="width: 100%; height: 33.35vh; background-color: black; position: absolute; z-index: 4; top: 66.70%;"></div>
+    </aside>
+
+    <aside>
+        <div class="divIdDepart" style="width: 0%; height: 33.35vh; background-color: black; position: fixed; z-index: 4; top: 0;"></div>
+        <div  class="divIdDepart"  style="width: 0%; height: 33.35vh; background-color: black; position: fixed; z-index: 4; top: 33.35vh;"></div>
+        <div class="divIdDepart"  style="width: 0%; height: 33.35vh; background-color: black; position: fixed; z-index: 4; top: 66.7vh;"></div>
+    </aside>
+
+
+    <script src="./assets/js/animationPortefolio.js"></script>
+</body>
+</html>

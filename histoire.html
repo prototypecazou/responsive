@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover">
+    <title>Document</title>
+</head>
+<link href="./assets/css/styleHistoire.css" rel="stylesheet">
+<link href="./assets/bootstrap/bootstrap5.min.css" rel="stylesheet">
+<link href="./assets/css/all-min.css" rel="stylesheet">
+<style>
+  * {
+  padding: 0;
+  margin: 0;
+}
+
+
+
+.containere {
+  border-top: 2px solid #101010;
+  border-bottom: 2px solid #101010;
+  width: 55%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  animation-name: box;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  margin-bottom: 15vmin;
+}
+
+.welcome {
+  font-family: "Sree Krushnadevaraya", serif;
+  font-size: 9vmin;
+  line-height: 70px;
+  animation-name: wel;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  font-weight: bold;
+
+}
+
+.go-away {
+  font-family:  "Sree Krushnadevaraya", serif;
+  font-size: 9vmin;
+  line-height: 80px;
+  position: absolute;
+  animation-name: go;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  font-weight: bold;
+  
+}
+
+@keyframes box {
+  0% {
+    height: 0px;
+    width: 0%;
+  }
+  10% {
+    height: 0px;
+    width: 43%;
+  }
+  20% {
+    height: 120px;
+  }
+  80% {
+    height: 120px;
+  }
+  90% {
+    height: 0px;
+  }
+  100% {
+    height: 120px;
+  }
+}
+@keyframes wel {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  91% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes go {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  91% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+</style>
+<body>
+    <header>
+        <div class="boxAccueil">
+            <div class="boxLogo position-relative">
+                <a class="logoAccueil" href="./">Paradoxe.</a>
+            </div>
+            <div class="burger animeOpac">
+                <div class="position-relative d-flex justify-content-center align-items-center w-100 h-100 flex-column spanBurger">
+                    <span class="ligne"></span>
+                    <span class="ligne"></span>
+                    <span class="ligne"></span>
+                </div>
+            </div>
+        </div>
+     
+    
+          <!-- AffichageMenuBurger-->
+          <!-- AffichageMenuBurger-->
+          <div id="menuBurgerDesktop" class="position-fixed row m-0">
+            <div id="burgerSectionGauche" class="bg-white col-12 col-lg-6 d-flex flex-column justify-content-between pe-0">
+                <div class="childBurger">
+                    <nav class="d-flex flex-column">
+                        <div class="unit w-100">
+                            <div class="digits text-white w-100 position-relative" style="z-index: 3;">
+                                <div class="cd__digit w-100 ancreBurger d-flex text-dark">
+                                    <div>
+                                        <i class="fas fa-long-arrow-alt-right arrowBurger"></i>
+                                    </div>
+                                    <a class=" position-relative lienAccueil  text-dark" href="./">Accueil</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="unit w-100">
+                            <div class="digits text-white w-100 position-relative" style="z-index: 3;">
+                                <div class="cd__digit w-100 ancreBurger d-flex text-dark" >
+                                    <i class="fas fa-long-arrow-alt-right arrowBurger"></i>
+                                    <a class=" text-dark lienBurger" >Contact</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="unit w-100">
+                            <div class="digits text-white w-100 position-relative" style="z-index: 3;">
+                                <div class="cd__digit w-100 ancreBurger d-flex text-dark" >
+                                    <div><i class="fas fa-long-arrow-alt-right arrowBurger"></i></div>
+                                    <a class=" text-dark lienBurger" >Prestations</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="unit w-100">
+                            <div class="digits text-white w-100 position-relative" style="z-index: 3;">
+                                <div class="cd__digit w-100 ancreBurger d-flex text-dark" >
+                                    <div><i class="fas fa-long-arrow-alt-right arrowBurger"></i></div>
+                                    <a class="  text-dark lienBurger" >Portefolio</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="unit w-100">
+                            <div class="digits text-white w-100 position-relative" style="z-index: 3;">
+                                <div class="cd__digit w-100 ancreBurger d-flex text-dark" >
+                                    <div><i class="fas fa-long-arrow-alt-right arrowBurger"></i></div>
+                                    <a class=" text-dark lienBurger" >Histoire</a>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="d-flex justify-content-between" id="adresseBurger">
+                    <div class="d-flex justify-content-end flex-column fw-bold">
+                        <div class="unit w-100">
+                            <div class="digits text-dark w-100 position-relative digitAdresse margeDigit">
+                                <div class="cd__digit w-100 " >
+                                    <p class="digitContact">06 52 57 65 67</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="unit w-100">
+                            <div class="digits text-dark w-100 position-relative digitAdresse">
+                                <div class="cd__digit w-100 ">
+                                    <p class="digitContact">contact.paradoxe.fr</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column reseauxBurger">
+                        <div class="unit w-100 unitTel">
+                            <div class="digitsReseau text-dark w-100 m-0 position-relative" style="z-index: 1;">
+                                <div class="cd__digit w-100 ">
+                                    <a class="lienReseau text-dark" href="#" >
+                                        <i class="fab fa-twitter reseauAccueil" style="font-size:3.5vmin"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="unit w-100 unitTel">
+                            <div class="digitsReseau text-dark w-100 position-relative" style="z-index: 1;">
+                                <div class="cd__digit w-100 ">
+                                    <a class="lienReseau text-dark"> <i class="fab fa-instagram reseauAccueil" style="font-size:3.5vmin;"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="unit w-100 unitTele">
+                            <div class="digitsReseau text-dark w-100 position-relative " style="z-index: 1;">
+                                <div class="cd__digit w-100 ">
+                                    <a class="lienReseau text-dark"><i class="fab fa-linkedin-in reseauAccueil" style="font-size:3.5vmin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="burgerSectionDroite" class="p-0 col-6 d-lg-flex flex-column d-none">
+                
+                    <div class="w-100  d-flex align-items-end" style="mix-blend-mode: multiply; background:rgb(0, 0, 0);height: 60%;">
+                        <h5 class="fw-bold titreSectionDroite text-white text-center w-100" style="font-size: 10vmin;">Agence <br> Paradoxe.</h5>
+                    </div>
+                    <div class="d-flex justify-content-end align-items-center flex-column text-white" style="height: 40%;background-color: black;">
+                        <p class="m-0 text-center" style="font-size: 2.5vmin;padding:0 3vmin">Agence Paradoxe &copy; 2022 - Agence web sur Montauban et Toulouse </p>
+                        <div class="bg-white" style="height: 0.2vmin;width: 15vmin;margin: 2vmin 0;"></div>
+                        <div style="font-size: 1.5vmin;" class="mb-1">
+                            <a class="text-white" href="">CGU |</a>
+                            <a class="text-white" href="">Mention Légales |</a>
+                            <a class="text-white" href="">Politique-de-confidentialité</a>
+                        </div>
+                    </div>
+               
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="divAccueil"> <!--style="height: 200vh;background-color: white;position: relative;"-->
+           <!-- <div>  style="position: sticky;top:50%;height: 60vh;"
+                <h1 class="titrePrincipale text-center">Notre Agence</h1>
+              
+            </div>-->
+            
+            <div class="containere">
+                <p class="welcome m-0">NOTRE AGENCE</p>
+                <p class="go-away m-0">AGENCE PARADOXE</p>
+              </div>
+        </div>
+        <div class="position-relative" style="background-color: black;">
+            <div class="firstBox">
+               
+                    <img style="width: 40%;" class="imgHistoire animationY" src="./assets/img/Office_Room_-_Transparent_Background_-_Copie.png">
+               
+                
+                <div class="secondEnfant">
+                    <h3 style="font-size: 5vmin;margin-bottom: 3vmin;" class="titleBox">Des bureaux au top</h3>
+                    <p class="paraBox animationText1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque debitis nostrum asperiores at rem sed, autem exercitationem quam porro? Minima in nihil, repudiandae sequi itaque veniam ab obcaecati aut libero.
+                    Consequatur a autem mollitia ipsa reprehenderit dicta iste officia cum magni laudantium reiciendis laboriosam sint fugiat corporis eligendi minima dolores possimus esse quaerat, et, perspiciatis aliquam voluptates incidunt sunt. Fugiat?</p>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center d-lg-none" style="margin-top: 7vmin;">
+                <img src="./assets/img/ligne_mobile.webp" style="height: 52vmin;transform: rotateX(180deg);" class="lineMobile">
+            </div>
+            <div class="firstBox responBox">
+                <div class="secondEnfant">
+                    <h3 style="font-size: 5vmin;margin-bottom: 3vmin;"  class="titleBox">Une expertise solide</h3>
+                    <p class="paraBox animationText2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque debitis nostrum asperiores at rem sed, autem exercitationem quam porro? Minima in nihil, repudiandae sequi itaque veniam ab obcaecati aut libero.
+                    Consequatur a autem mollitia ipsa reprehenderit dicta iste officia cum magni laudantium reiciendis laboriosam sint fugiat corporis eligendi minima dolores possimus esse quaerat, et, perspiciatis aliquam voluptates incidunt sunt. Fugiat?</p>
+                </div>
+
+              
+                    <svg id="Calque_1" style="width: 38%;" class="imgHistoire animationX" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 569.67 593"><defs><style>.cls-1{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2px;}.cls-2{fill:#fff;}</style></defs><title>icons expertises</title><polygon class="cls-1" points="513.67 301.03 403.99 301.03 349.15 396.01 403.99 491 513.67 491 568.51 396.01 513.67 301.03"/><polygon class="cls-1" points="339.62 402.03 229.94 402.03 175.1 497.01 229.94 592 339.62 592 394.45 497.01 339.62 402.03"/><polygon class="cls-1" points="513.67 100.5 403.99 100.5 349.15 195.49 403.99 290.47 513.67 290.47 568.51 195.49 513.67 100.5"/><polygon class="cls-1" points="339.62 1 229.94 1 175.1 95.98 229.94 190.97 339.62 190.97 394.45 95.98 339.62 1"/><polygon class="cls-1" points="165.67 102 55.99 102 1.16 196.99 55.99 291.97 165.67 291.97 220.51 196.99 165.67 102"/><polygon class="cls-1" points="339.62 201.5 229.94 201.5 175.1 296.49 229.94 391.47 339.62 391.47 394.45 296.49 339.62 201.5"/><path class="cls-2" d="M189,315.65v5.14c-.19,1.34-.35,2.69-.6,4a38.87,38.87,0,0,1-12.9,22.59c-1.17,1-2.44,2-3.76,3l-7.6-13.17a23.92,23.92,0,0,0,8.08-10.57H154.92c-2.08,0-3-1-3-3.06V314.3a2.59,2.59,0,0,1,2.8-2.85h31.18a2.6,2.6,0,0,1,2.87,2.5C188.82,314.51,188.89,315.08,189,315.65Z" transform="translate(-37.27 -120.21)"/><path class="cls-2" d="M167.39,353c-2.08.79-4.08,1.61-6.12,2.29a32.24,32.24,0,0,1-7.9,1.55,3.16,3.16,0,0,0-.59.14h-5.29l-3.05-.44A38,38,0,0,1,122.34,345c-1.56-1.61-2.91-3.41-4.45-5.24l13.21-7.63c7.79,9.21,17.26,11.81,28.7,7.71Z" transform="translate(-37.27 -120.21)"/><path class="cls-2" d="M128.67,327.75l-13.11,7.58a5.6,5.6,0,0,1-.31-.49,37.76,37.76,0,0,1-3.65-13.32,5.27,5.27,0,0,0-.14-.57V315.5c.2-1.42.37-2.84.62-4.25a36.68,36.68,0,0,1,3.15-9.73c.06-.13.15-.26.25-.45l13.19,7.62a23.28,23.28,0,0,0,0,19.06Z" transform="translate(-37.27 -120.21)"/><path class="cls-2" d="M175.73,292.71q-3.49,3.57-7.06,7.07a2.5,2.5,0,0,1-3.66.12A22.49,22.49,0,0,0,154.27,295c-9.12-1.39-16.6,1.57-22.51,8.61-.15.17-.28.35-.43.53a1.3,1.3,0,0,1-.18.15L118,296.7a38.8,38.8,0,0,1,12.79-12,38.75,38.75,0,0,1,44.76,4.16A2.49,2.49,0,0,1,175.73,292.71Z" transform="translate(-37.27 -120.21)"/><path class="cls-2" d="M459.93,474.93c.3,3.43.59,6.85.89,10.28l.9,10q.52,6,1.06,12l.87,9.87,1.08,12,1,11.65q.35,4,.68,8a.77.77,0,0,0,.64.78q14.3,4,28.6,8a2,2,0,0,0,1,0q14.19-3.95,28.37-7.89a.85.85,0,0,0,.72-.89q.5-5.86,1-11.73t1.07-11.8l1-11.73q.52-5.94,1.07-11.89l.87-9.87q.53-6,1.06-12c.14-1.58.27-3.16.4-4.74Zm58.56,20.84-.9,10q-.54,5.94-1.07,11.88t-1,11.65c-.21,2.28-.41,4.55-.65,6.82a.85.85,0,0,1-.48.59q-9,2.52-18,5a1.51,1.51,0,0,1-.78-.07c-5.87-1.62-11.74-3.23-17.6-4.88-.24-.07-.58-.35-.61-.56-.45-4.62-.87-9.26-1.29-13.89a1.9,1.9,0,0,1,.07-.32h2.48c2,0,3.93,0,5.89,0,.55,0,.74.18.78.73.14,2,.35,4.07.5,6.11a.93.93,0,0,0,.81,1c3,.77,5.91,1.59,8.87,2.37a2.57,2.57,0,0,0,1.17,0c3-.78,6-1.6,8.94-2.4.44-.12.76-.26.81-.81.41-4,.85-8,1.29-12H475.62c-.3-2.89-.59-5.7-.9-8.58.37,0,.63,0,.89,0l31.72-.36c1.38,0,1.13,0,1.21-1.17.18-2.68.41-5.36.62-8.1H473.81c-.2-2.86-.39-5.67-.58-8.52H519C518.81,492.08,518.65,493.92,518.49,495.77Z" transform="translate(-37.27 -120.21)"/><path class="cls-2" d="M280,174.1v1.15c.16,1.44.35,2.87.49,4.31q.65,7,1.28,14.07c.41,4.51.8,9,1.21,13.51.35,3.93.73,7.86,1.09,11.79s.69,7.8,1,11.7.73,7.86,1.09,11.79c.25,2.7.5,5.4.71,8.1,0,.57.16.85.8,1,8.43,1.65,16.85,3.35,25.27,5,2.81.56,5.61,1.22,8.45,1.63a11.24,11.24,0,0,0,3.62-.39q15.45-3.06,30.89-6.18c1.55-.32,1.28,0,1.41-1.54.52-5.73,1.07-11.46,1.59-17.19s1-11.46,1.53-17.19,1.07-11.45,1.59-17.19c.47-5.13.91-10.25,1.37-15.39.27-3,.55-6,.82-9Zm38.53,69.19L300,239.61c-.39-4.28-.78-8.52-1.17-12.81h7c.15,1.47.28,2.91.42,4.35a11.08,11.08,0,0,1,.14,1.72c0,.72.26,1,.94,1.11,1.37.22,2.74.51,4.2.79V188.21h6.92Zm29.69-48.13h-15.5v17.58h13.89c-.18,2-.34,3.93-.51,5.86q-.54,5.88-1.09,11.78c-.26,2.89-.52,5.78-.82,8.67a.87.87,0,0,1-.51.64c-5.84,1.2-11.68,2.36-17.53,3.52a2.12,2.12,0,0,1-.45,0v-7.05c3.39-.67,6.76-1.36,10.14-2,1.79-.35,1.83-.33,2-2.08.37-3.82.7-7.64,1-11.46,0-.27,0-.54,0-.9H325.66V188.24H348.8C348.59,190.53,348.39,192.79,348.18,195.16Z" transform="translate(-37.27 -120.21)"/><path class="cls-2" d="M279.21,574.44l1,13.54.72,10.28q.48,6.65.95,13.29c.31,4.24.6,8.48.9,12.71.31,4.4.64,8.81.95,13.21.25,3.57.5,7.13.73,10.7.1,1.44.07,1.44,1.43,1.89q15.3,5,30.59,10.05a2.41,2.41,0,0,0,1.43,0c10.36-3.38,20.71-6.8,31.07-10.18a1.16,1.16,0,0,0,.91-1.24c.28-4.47.62-8.92.93-13.38s.6-8.64.91-13,.63-8.64.93-13,.6-8.47.9-12.71c.32-4.42.65-8.86,1-13.29.21-3,.38-6,.58-8.94Zm61.61,22.66H303.54c.3,4.31.6,8.54.9,12.87h35.48c-.12,1.84-.23,3.56-.35,5.28l-1,13.46c-.27,3.71-.54,7.41-.84,11.12a.91.91,0,0,1-.49.61q-9.82,3.31-19.67,6.58a1.8,1.8,0,0,1-1.05,0q-9.72-3.22-19.44-6.48c-.25-.09-.59-.39-.61-.61-.25-3.21-.46-6.41-.69-9.71h10c.07.76.1,1.51.24,2.24a1,1,0,0,0,.53.67q5,1.71,10.07,3.35a1.61,1.61,0,0,0,1,0c3.34-1.08,6.67-2.21,10-3.28.57-.19.62-.56.66-1,.18-2.7.37-5.4.55-8.11.09-1.28.18-2.56.27-3.92H295.07c-.78-11.05-1.55-22-2.32-33h48.79C341.3,590.42,341.06,593.73,340.82,597.1Z" transform="translate(-37.27 -120.21)"/><path class="cls-2" d="M359.11,385c-8-.17-15.77-1.45-22.72-5.4-4.74-2.69-8.93-6.34-13.37-9.56H320.6c-.91.79-1.83,1.55-2.72,2.35a43.34,43.34,0,0,1-20,10.76,135.52,135.52,0,0,1-15,1.85c-2.73.26-4.24,1.35-4.26,3.81-.09,11.56-.77,23.14.79,34.67,1.26,9.36,3.86,18.26,9.07,26.26,7.73,11.87,19.07,18.85,32.14,23.4a3.93,3.93,0,0,0,2.35,0c9.52-3.26,18.23-7.92,25.42-15.11,10.54-10.53,15.1-23.72,16.11-38.16.67-9.58.41-19.22.5-28.83C365.05,385.83,364.28,385.13,359.11,385ZM356,428.84c-3.69,17.5-14.43,29-30.66,35.79a8.4,8.4,0,0,1-7.23-.06c-11.46-5-20.88-12.16-26.47-23.66a56.9,56.9,0,0,1-5.56-22.76c-.35-8.52-.08-17.06-.08-25.23,6.16-1.36,12.26-2.39,18.16-4.09a45.71,45.71,0,0,0,16.26-9.09c.74-.61,1.29-1.25,2.37-.34,9.75,8.31,21.26,12.05,33.88,12.82.27,0,.53.06.78.09.1.13.24.24.24.35C358.11,404.76,358.56,416.88,356,428.84Z" transform="translate(-37.27 -120.21)"/><path class="cls-2" d="M339.7,413.84a11.79,11.79,0,0,1-1.34,1.49q-9.06,9.06-18.13,18.11c-2.59,2.58-4.24,2.58-6.81,0l-8.28-8.28c-2.21-2.21-2.52-4.27-.9-5.93s3.73-1.46,5.94.77,4.31,4.4,6.59,6.75l16.38-16.48a12.05,12.05,0,0,1,1.64-1.48,3.56,3.56,0,0,1,4.91,5Z" transform="translate(-37.27 -120.21)"/><path class="cls-2" d="M538.76,307.45c-3-13.71-10.59-24.15-23.22-30.39-14.79-7.33-29.49-6.41-43.31,2.52A41.18,41.18,0,0,0,453,310.31c-2.41,19.57,7.76,37.36,25.88,45.33,3.61,1.58,7.66,2.18,11.5,3.24.43.11.84.25,1.26.36h8.83c1.63-.34,3.28-.62,4.91-1,15.88-3.93,26.53-13.66,32-29a67,67,0,0,0,1.79-7.9c.09-.37.24-.72.35-1.09v-8.82C539.28,310.08,539.05,308.76,538.76,307.45Zm-78.26-7.19c6.16,16.87,12.24,33.55,18.41,50.44C459.58,341.56,452.12,317.94,460.5,300.26Zm24.63,52.9q5.72-16.65,11.44-33.26H497l11.91,32.67A37.29,37.29,0,0,1,485.13,353.16Zm16.39-55.61c1.47-.14,2.76-.31,4.06-.4,1.14-.09,1.84-.6,1.76-1.8s-1-1.52-2.07-1.48-2.37.23-3.54.22c-5.43,0-10.85-.14-16.27-.23-1.16,0-2.1.33-2.17,1.58s.73,1.76,1.86,1.68c2.91-.18,4.28,1.15,5.07,4,1.1,4,2.79,7.85,4.17,11.79a3.41,3.41,0,0,1,.19,2.1c-2.64,8.09-5.36,16.16-8.2,24.69-4.81-14.27-9.47-28.14-14.17-42.11,1.35-.14,2.52-.32,3.69-.4s2.26-.36,2.14-1.8-1.35-1.53-2.56-1.46c-3.33.19-6.66.34-10,.47a16.59,16.59,0,0,1-1.68-.1c11-18,39.11-24.62,58.25-7.48-5.57,1-8,5.24-5.94,10.44a28.17,28.17,0,0,0,2.57,4.93,21.09,21.09,0,0,1,2.45,18.77c-1.91,6-3.62,12-5.56,18.4C510.81,325.17,506.17,311.39,501.52,297.55ZM516,349.15c.23-.77.36-1.33.54-1.88,4.1-11.82,8.25-23.61,12.28-35.45A30.91,30.91,0,0,0,530.52,298C540.26,315.58,533.84,338.86,516,349.15Z" transform="translate(-37.27 -120.21)"/></svg>
+             
+            </div>
+            
+            <div class="d-flex justify-content-center d-lg-none" style="margin: 7vmin;">
+                <img src="./assets/img/ligne_mobile.webp" style="height: 52vmin;" class="lineMobile">
+            </div>
+                <img src="./assets/img/line.png" class="position-absolute d-none d-lg-block lineDesktop"  style="top:23%;left:48.5%;height: 95vh;">
+                <div>
+                    <span class="d-block text-center fw-bold choc" style="font-size: 4vmin;color: white;margin-top: 2vmin;">Et pour finir <br> une équipe de choc</span>
+                </div>
+
+               
+                <div style="margin: 15vmin 0;">
+                    <div class="row justify-content-center align-items-center text-white ">
+                        <div class="col-lg-5 col-xl-4 col-12 d-flex justify-content-center d-lg-block">
+                            <img src="./assets/img/maxime.png" style="width: 100%;" class="imgProfil">
+                        </div>
+                        <div class="col-lg-5 col-xl-4 offset-lg-1 col-12">
+                            <div style="margin-bottom: 3vmin;" class="d-flex justify-content-center d-lg-block boxPrenom">
+                                <span class="prenom">Maxime</span>
+                            </div>
+                           <div class="boxDescription">
+                                <span style="font-size: 4vmin;margin: 10vmin 0!important;" class="fw-bold description">Web Designer</span>
+                                <p style="font-size: 4vmin;margin-top: 3vmin;" class="description">Tres a l'écoute, la satisfaction des clients est son objectif principale et pour cela, il souhaite composer l'Agence d'un capital
+                                    humain qualifié. Ment principale porte sur le recrutement d'expert reconnus. 
+                                </p>
+                           </div>
+                          
+                        </div>
+                    </div>
+                   
+
+                    <div class="row justify-content-center align-items-center text-white boxProfil2" style="margin-top: 20vmin!important;">
+                        <div class="col-lg-5 col-xl-4  col-12">
+                            <div style="margin-bottom: 3vmin;" class="d-flex justify-content-center d-lg-block boxPrenom">
+                                <span class="prenom">Guillaume</span>
+                            </div>
+                            <div class="boxDescription">
+                                <span style="font-size: 4vmin;font-weight: bold;" class="d-block text-end description">Développeur Web</span>
+                                <p style="font-size: 4vmin;margin-top: 3vmin;" class="text-end description">Passioner par le web aucun défi ne lui résiste, à force de nuit blanche son expertise n'a cesser de s'affiner pour devenir
+                                    un associer fiable et efficace.
+                                </p>
+                            </div>
+                          
+                        </div>
+                        <div class="col-lg-5 col-xl-4 col-12 d-flex justify-content-center d-lg-block offset-lg-1">
+                            <img src="./assets/img/guillaume.png" class="imgProfil" style="width: 100%;">
+                        </div>
+                    </div>
+                  
+                </div>
+            
+        </div>
+
+        <aside>
+            <div id="divId" style="width: 100%; height: 33.35vh; background-color: black; position: absolute; z-index: 4; top: 0;"></div>
+            <div id="divId"  style="width: 100%; height: 33.35vh; background-color: black; position: absolute; z-index: 4; top: 33.35%;"></div>
+            <div id="divId"  style="width: 100%; height: 33.35vh; background-color: black; position: absolute; z-index: 4; top: 66.70%;"></div>
+        </aside>
+    
+        <aside>
+            <div class="divIdDepart" style="width: 0%; height: 33.35vh; background-color: black; position: fixed; z-index: 4; top: 0;"></div>
+            <div  class="divIdDepart"  style="width: 0%; height: 33.35vh; background-color: black; position: fixed; z-index: 4; top: 33.35vh;"></div>
+            <div class="divIdDepart"  style="width: 0%; height: 33.35vh; background-color: black; position: fixed; z-index: 4; top: 66.7vh;"></div>
+        </aside>
+    </main>
+
+ 
+
+
+    <script src="./assets/js/animationHistoire.js"></script>
+</body>
+</html>

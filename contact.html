@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="./assets/css/styleContact.css" rel="stylesheet"> 
+    <link href="./assets/bootstrap/bootstrap5.min.css" rel="stylesheet">
+    <link href="./assets/css/all-min.css" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        <div class="boxAccueil">
+            <div class="boxLogo ">
+                <a class="logoAccueil" href="./">Paradoxe.</a>
+            </div>
+            
+            <div class="burger animeOpac">
+                <div class="position-relative d-flex justify-content-center align-items-center w-100 h-100 flex-column spanBurger">
+                    <span class="ligne"></span>
+                    <span class="ligne"></span>
+                    <span class="ligne"></span>
+                </div>
+            </div>
+        </div>
+     
+    
+          <!-- AffichageMenuBurger-->
+          <div id="menuBurgerDesktop" class="position-fixed row m-0">
+            <div id="burgerSectionGauche" class="bg-white col-12 col-lg-6 d-flex flex-column justify-content-between pe-0">
+                <div class="childBurger">
+                    <nav class="d-flex flex-column">
+                        <div class="unit w-100">
+                            <div class="digits text-white w-100 position-relative" style="z-index: 3;">
+                                <div class="cd__digit w-100 ancreBurger d-flex text-dark">
+                                    <div>
+                                        <i class="fas fa-long-arrow-alt-right arrowBurger"></i>
+                                    </div>
+                                    <a class=" position-relative lienAccueil  text-dark" href="./">Accueil</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="unit w-100">
+                            <div class="digits text-white w-100 position-relative" style="z-index: 3;">
+                                <div class="cd__digit w-100 ancreBurger d-flex text-dark" >
+                                    <i class="fas fa-long-arrow-alt-right arrowBurger"></i>
+                                    <a class=" text-dark lienBurger" >Contact</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="unit w-100">
+                            <div class="digits text-white w-100 position-relative" style="z-index: 3;">
+                                <div class="cd__digit w-100 ancreBurger d-flex text-dark" >
+                                    <div><i class="fas fa-long-arrow-alt-right arrowBurger"></i></div>
+                                    <a class=" text-dark lienBurger" >Prestations</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="unit w-100">
+                            <div class="digits text-white w-100 position-relative" style="z-index: 3;">
+                                <div class="cd__digit w-100 ancreBurger d-flex text-dark" >
+                                    <div><i class="fas fa-long-arrow-alt-right arrowBurger"></i></div>
+                                    <a class="  text-dark lienBurger" >Portefolio</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="unit w-100">
+                            <div class="digits text-white w-100 position-relative" style="z-index: 3;">
+                                <div class="cd__digit w-100 ancreBurger d-flex text-dark" >
+                                    <div><i class="fas fa-long-arrow-alt-right arrowBurger"></i></div>
+                                    <a class=" text-dark lienBurger" >Histoire</a>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="d-flex justify-content-between" id="adresseBurger">
+                    <div class="d-flex justify-content-end flex-column fw-bold">
+                        <div class="unit w-100">
+                            <div class="digits text-dark w-100 position-relative digitAdresse margeDigit">
+                                <div class="cd__digit w-100 " >
+                                    <p class="digitContact">06 52 57 65 67</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="unit w-100">
+                            <div class="digits text-dark w-100 position-relative digitAdresse">
+                                <div class="cd__digit w-100 ">
+                                    <p class="digitContact">contact.paradoxe.fr</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column reseauxBurger">
+                        <div class="unit w-100 unitTel">
+                            <div class="digitsReseau text-dark w-100 m-0 position-relative" style="z-index: 1;">
+                                <div class="cd__digit w-100 ">
+                                    <a class="lienReseau text-dark" href="#" >
+                                        <i class="fab fa-twitter reseauAccueil" style="font-size:3.5vmin"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="unit w-100 unitTel">
+                            <div class="digitsReseau text-dark w-100 position-relative" style="z-index: 1;">
+                                <div class="cd__digit w-100 ">
+                                    <a class="lienReseau text-dark"> <i class="fab fa-instagram reseauAccueil" style="font-size:3.5vmin;"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="unit w-100 unitTele">
+                            <div class="digitsReseau text-dark w-100 position-relative " style="z-index: 1;">
+                                <div class="cd__digit w-100 ">
+                                    <a class="lienReseau text-dark"><i class="fab fa-linkedin-in reseauAccueil" style="font-size:3.5vmin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="burgerSectionDroite" class="p-0 col-6 d-lg-flex flex-column d-none">
+                
+                    <div class="w-100  d-flex align-items-end" style="mix-blend-mode: multiply; background:rgb(0, 0, 0);height: 60%;">
+                        <h5 class="fw-bold titreSectionDroite text-white text-center w-100" style="font-size: 10vmin;">Agence <br> Paradoxe.</h5>
+                    </div>
+                    <div class="d-flex justify-content-end align-items-center flex-column text-white" style="height: 40%;background-color: black;">
+                        <p class="m-0 text-center" style="font-size: 2.5vmin;padding:0 3vmin">Agence Paradoxe &copy; 2022 - Agence web sur Montauban et Toulouse </p>
+                        <div class="bg-white" style="height: 0.2vmin;width: 15vmin;margin: 2vmin 0;"></div>
+                        <div style="font-size: 1.5vmin;" class="mb-1">
+                            <a class="text-white" href="">CGU |</a>
+                            <a class="text-white" href="">Mention Légales |</a>
+                            <a class="text-white" href="">Politique-de-confidentialité</a>
+                        </div>
+                    </div>
+               
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h1 class="titrePage">Contactez nous de la maniere <br> qui vous convient.</h1>
+        <section id="blocFormulaire" data-resize = "resize8" class=" d-flex m-0 p-0 justify-content-center">
+            <div class=" d-flex align-items-center justify-content-lg-center justify-content-around formulaireContact flex-column flex-lg-row">
+              
+                <form class="d-flex flex-column position-relative" id="formulaire" onsubmit="return false">
+                    <input class="border-bottom  border-3 text-white" type="text" placeholder="Votre nom" id="nom">
+                    <input class="inputMarge0 border-bottom border-white text-white border-3 " type="text" placeholder="Votre mail" id="mail">
+                    <input class="border-bottom border-white text-white border-3 " type="text" placeholder="Votre numero" id="telephone">
+                    <textarea class="inputMarge1 border-bottom border-white text-white border-3" type="text" placeholder="Votre message" id="message"></textarea>
+            
+                    
+                    <a aria-label='Thanks' class='h-button centered' data-text='Envoyer' href='#'>
+                        <span>M</span>
+                        <span>e</span>
+                        <span>r</span>
+                        <span>c</span>
+                        <span>i</span>
+                    </a>
+                      
+                    
+                </form>
+                <div class="d-flex flex-column d-lg-none text-white align-items-lg-end align-items-center adressPhone" >
+                    <p>contact@paradoxe.fr <i class="far fa-envelope ms-2 iconeFor"></i></p>
+                    <p>06 52 57 65 67 <i class="fas fa-phone ms-2 iconeFor"></i></p>
+                </div>
+            </div>
+            <div class=" boxSvg text-white position-relative d-lg-flex flex-column align-items-center justify-content-center d-none">
+                <svg id="eU6SWpw9GOx1" class="position-absolute animePath d-none d-lg-block" viewBox="1600 -140 8000 4500" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+                    <path d="M4796.16127,2740.724855C3473.877201,1386.798703,5629.651709,-406.19691,6658.696119,1515.119022c642.156352,1198.962084-165.096934,2367.755714-607.977697,2258.202874s-866.846753-675.367001-1254.557152-1032.597041Z"  fill="none" stroke="#fff" stroke-width="18"/>
+                </svg>            
+                <h2 class="titleContactDes">Contactez</h2>
+                <div class="d-flex align-items-center ms-1">
+                    <div class="bg-white ecartDes"></div> 
+                    <h2 class="m-0 ms-1 titleContactDes1">nous</h2>
+                </div>
+                <div class="d-flex flex-column align-items-end forAdresse">
+                    <p class="mt-4 mb-2 fw-bold">contact@paradoxe.fr <i class="far fa-envelope ms-2"></i></p>
+                    <p class="fw-bold">06 52 57 65 67 <i class="fas fa-phone ms-2"></i></p>
+                </div>
+                <div class="position-absolute fw-bold blQuestion d-none d-lg-block">
+                    <p class="m-0">Une question, un projet ? Contactez notre agence <br> et nous vous répondrons dans les meilleurs délais.</p>
+                </div>
+            </div> 
+        </section>  
+           
+    </main>
+
+    <aside>
+        <div id="divId" style="width: 100%; height: 33.35vh; background-color: black; position: absolute; z-index: 4; top: 0;"></div>
+        <div id="divId"  style="width: 100%; height: 33.35vh; background-color: black; position: absolute; z-index: 4; top: 33.35%;"></div>
+        <div id="divId"  style="width: 100%; height: 33.35vh; background-color: black; position: absolute; z-index: 4; top: 66.70%;"></div>
+    </aside>
+
+    <aside>
+        <div class="divIdDepart" style="width: 0%; height: 33.35vh; background-color: black; position: fixed; z-index: 4; top: 0;"></div>
+        <div  class="divIdDepart"  style="width: 0%; height: 33.35vh; background-color: black; position: fixed; z-index: 4; top: 33.35vh;"></div>
+        <div class="divIdDepart"  style="width: 0%; height: 33.35vh; background-color: black; position: fixed; z-index: 4; top: 66.7vh;"></div>
+    </aside>
+
+    <script src="./assets/js/animationContact.js"></script>
+</body>
+</html>

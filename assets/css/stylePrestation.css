@@ -1,0 +1,234 @@
+a{
+  text-decoration:none!important;
+}
+
+
+
+#burgerSectionDroite{
+  background-image: url("../img/toa-heftiba-FV3GConVSss-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 50%;
+  animation: loading-slide 10s linear infinite alternate;
+ }
+
+
+ #burgerSectionGauche,#burgerSectionDroite{
+  transform: translateY(-100%);
+  transition: all 0.5s ease-out;
+  transition-delay: 0.5s;
+
+}
+
+ 
+ #burgerSectionGauche.open,#burgerSectionDroite.open{
+   transform: translateY(0)!important;
+   transition: all 0.5s ease-out;
+ }
+
+ @keyframes loading-slide {
+  from {
+    background-position: left;
+  }
+  to {
+    background-position: right;
+  }
+}
+#menuBurgerDesktop{
+  height: 100vh;
+  top:0;
+  width: 100%;
+  z-index: -1;
+}
+
+.childBurger{
+  margin: 3vmin 0 3vmin 0!important;
+}
+
+.cd__digit {
+	width: 1ch;
+	z-index: -1;
+  position: relative;
+}
+
+.digits{
+  display: flex;
+  justify-content: center;
+  height: 6vmin;
+  font-weight: bold;
+  overflow: hidden;
+  margin-bottom: 1.5vmin!important;
+}
+.digitAdresse{
+  height:3.2vmin!important
+}
+
+.reseauAccueil{
+  transition: transform 0.5s ease-out;
+}
+
+.digitsReseau{
+  display: flex;
+  justify-content: center;
+  height: 7vmin;
+  padding: 0 2vmin;
+  font-weight: bold;
+  overflow: hidden;
+
+}
+
+.arrowBurger{
+  transform: translateX(-4.5vmin);
+  letter-spacing: 2vmin;
+  transition: transform 0.3s linear;
+  
+  opacity: 0;
+  transition: opacity 0.5s linear;
+}
+
+.ancreBurger, .lien{
+  cursor: pointer;
+}
+
+
+.ancreBurger:hover .arrowBurger{
+  opacity: 1;
+  transform: translateX(0px);
+  transition: transform 0.3s linear;
+  transition: opacity 0.5s linear;
+}
+
+
+.ancreBurger{
+  transform: translateX(-7.80vmin);
+  transition: transform 0.3s linear;
+ 
+}
+
+.ancreBurger:hover{
+  transform: translateX(2vmin);
+  transition: all 0.3s linear;
+}
+
+
+.unit{
+  font-size: 6vmin;
+	line-height: 3;
+	width: 3ch;
+  transition: all 0.5s ease-in;
+}
+
+.unit.apparition{
+  line-height: 1;
+  transition: line-height 0.5s ease-in;
+  transition-delay: 0.5s;
+}
+
+.burger {
+  background-color: rgb(255, 255, 255);
+  box-shadow: none;
+  border: none;
+  position: fixed;
+  cursor: pointer;
+  top:0%;
+  right:0%;
+  z-index: 3!important;
+  height: 6vmin;
+  width: 7vmin;
+  padding: 0 4vmin;
+}
+
+.burger span {
+  width: 5vmin;
+  height: 0.5vmin;
+  background-color: rgb(0, 0, 0);
+  border-radius: 15vmin;
+}
+
+.burger span:nth-child(1) {
+  top: 0;
+  transform: translateX(0%) translateY(0);
+  transition: top 0.3s cubic-bezier(0.21, 0.83, 0.26, 0.87) 0.3s, transform 0.3s cubic-bezier(0.21, 0.83, 0.26, 0.87);
+}
+
+.burger span:nth-child(2) {
+  top: 1.2vmin;
+  opacity: 1;
+  transform: translateX(0%);
+  margin:0.8vmin 0!important
+}
+
+.burger span:last-child {
+  top: 2.4vmin;
+  transform: translateX(0%) translateY(0);
+  transition: top 0.3s cubic-bezier(0.21, 0.83, 0.26, 0.87) 0.3s, transform 0.3s cubic-bezier(0.21, 0.83, 0.26, 0.87);
+}
+
+.burger.open span:nth-child(1) {
+  top: 50%;
+  transform: translateX(0%) translateY(250%) rotate(45deg);
+  transition: top 0.3s cubic-bezier(0.21, 0.83, 0.26, 0.87), transform 0.3s cubic-bezier(0.21, 0.83, 0.26, 0.87) 0.3s;
+}
+
+.burger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger.open span:last-child {
+  top: 50%;
+  transform: translateX(0%) translateY(-250%) rotate(-45deg);
+  transition: bottom 0.3s cubic-bezier(0.21, 0.83, 0.26, 0.87), transform 0.3s cubic-bezier(0.21, 0.83, 0.26, 0.87) 0.3s;
+}
+
+
+
+.divChargement0{
+    animation: chargementDiv 0.4s linear forwards;
+   
+  }
+  
+  .divChargement1{
+    animation: chargementDiv 0.4s linear forwards;
+    animation-delay: 0.4s;
+  }
+  
+  .divChargement2{
+    animation: chargementDiv 0.4s linear forwards;
+    animation-delay: 0.8s;
+  }
+  @keyframes chargementDiv {
+    from{
+      width: 100%;
+    }
+  
+    to{
+      width: 0%;
+    }
+  }
+
+  .digitContact{
+    font-size: 3.2vmin!important;
+  }
+
+  .divChargementDepart0{
+    animation: chargementDive 0.3s linear forwards;
+  }
+  
+  .divChargementDepart1{
+    animation: chargementDive 0.3s linear forwards;
+    animation-delay: 0.2s;
+  }
+  
+  .divChargementDepart2{
+    animation: chargementDive 0.3s linear forwards;
+    animation-delay: 0.5s;
+  }
+  @keyframes chargementDive {
+    from{
+      width: 0;
+    }
+  
+    to{
+      width: 100%;
+    }
+  }
